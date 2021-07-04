@@ -1,0 +1,82 @@
+
+.testmonial {
+  background-color: $section_color;
+  color: $common_color;
+  .slick-arrow {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .slick-arrow i {
+    color: $common_color;
+    background-color: $primary_color;
+    width: 40px;
+    height: 40px;
+    line-height:40px ;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+  }
+  .slick-prev{
+    right: -50px;
+  }
+  .slick-next{
+    left: -50px;
+  }
+  .single-testmonial {
+    text-align: center;
+    img {
+      border-radius: 50%;
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+    }
+    h4 {
+      font-size: 26px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      span {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: lowercase;
+        margin-top: 10px;
+      }
+    }
+    
+  }
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: $primary_color;
+    color: $common_color;
+    
+  }
+}
+
+
+
+
+
+

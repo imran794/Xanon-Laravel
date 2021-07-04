@@ -1,0 +1,32 @@
+.banner-area {
+  height: 100vh;
+}
+
+  .banner-contant{
+    padding: 10px 30px;
+     h1{
+    font-size: 80px;
+    line-height: 100px;
+    color: $common_color;
+    text-transform: uppercase;
+    font-weight: 700;
+     }
+
+    h4{
+      font-size: 25px;
+      color: #fff;
+      line-height: 25px;
+      text-transform: capitalize;
+    }
+    a{
+      margin: 30px 5px 0 5px;
+      color: $common_color;
+
+      transition: .3s;
+
+    }
+  }
+
+
+
+

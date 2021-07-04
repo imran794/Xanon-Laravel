@@ -1,0 +1,44 @@
+.header-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    z-index: 999;
+    .logo{
+        a{
+            display: inline-block;
+            color: $common_color;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            border: 1px solid $common_color;
+            padding: 15px 10px;
+           
+        
+
+        }
+    }
+
+    .menu{
+        ul{
+            li{
+                a{
+                    display: block;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-left: 30px;
+                    color:$common_color;
+                    font-weight: 400;
+                    transition: 0.3s;
+                    &:hover {
+                      color: $hover_color;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,133 @@
+@import 'variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+  }
+
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Background Image CSS */
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: $link_color;
+      opacity: 0.75;
+      z-index: -1;
+    }
+  }
+
+  .mx-auto{
+    margin: 0 auto;
+  }
+  
+
+
+$flex: flex, inline-flex;
+
+@each $i in $flex {
+    .d-#{$i}{
+        display: $i;
+    }
+    
+}
+
+$justify: start, center, end, evenly, space-around, space-between;
+
+@each $i in $justify {
+  .justify-content-#{$i} {
+    justify-content: $i;
+  }
+}
+
+$align-items: start, center, end, stretch, baseline;
+
+@each $i in $align-items {
+  .align-items-#{$i} {
+    align-items: $i;
+  }
+}
+
+$align: left, center, right, justify;
+
+@each $i in $align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+
+/* padding margin */ 
+
+@for $i from 1 through 10 {
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+  
+}
+
+
+/* button */
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px;
+  color: $common_color;
+  text-transform: capitalize;
+  transition: .3s;
+  &.btn-primary{
+    background-color: $hover_color;
+    padding: 10px 30px;
+    &:hover{
+      background-color: $btn_hover;
+
+    }
+   
+  }
+  &.btn-broder{
+    border: 1px solid $hover_color;
+    padding: 8px 30px;
+    &:hover{
+      background-color: $btn_hover;
+      border-color: $btn_hover;
+    }
+  }
+}
+

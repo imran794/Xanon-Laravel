@@ -1,0 +1,47 @@
+.blog-area{
+  background-color: #eee;
+  .single-blog{
+    background-color: #fff;
+
+  }
+  .blog-meta {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    margin-top: -25px;
+    position: relative;
+    a {
+      color: #333;
+      transition: .3s;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+  .blog-content {
+    padding: 20px;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+

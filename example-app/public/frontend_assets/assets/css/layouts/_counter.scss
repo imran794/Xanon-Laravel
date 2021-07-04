@@ -1,0 +1,23 @@
+.counter-area{
+  background-color: $section_color;
+    color: $common_color;
+}
+
+.single-count{
+  text-align: center;
+  i {
+    background-color: $primary_color;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+p{
+  text-transform: capitalize;
+}
+
+}

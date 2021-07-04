@@ -1,0 +1,29 @@
+.services-area {
+  background-color: $gry_color;
+}
+
+.single-services{
+  background-color: #fff;
+padding: 20px 30px;
+margin-bottom: 50px;
+i{
+  background-color: $header_color;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  transition: .3s;
+  &:hover{
+    border-radius: 50%;
+  }
+
+}
+   h4{
+    font-size: 24px;
+    padding: 15px 0;
+    text-transform: capitalize;
+
+   }
+
+}
+
+
