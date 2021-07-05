@@ -1,10 +1,10 @@
 @extends('layouts.dashboard')
 
 @section('title')
-Banner
+Add Contact Address
 @endsection
 
-@section('Banner')
+@section('Add Contact Address')
 active
 @endsection
 
@@ -12,7 +12,7 @@ active
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Add Banner</li>
+      <li class="breadcrumb-item active" aria-current="page">Add Contact Address</li>
     </ol>
   </nav>
 @endsection
@@ -24,31 +24,27 @@ active
     <div class="row">
         <div class="col-md-8">
            <div class="card">
-               <div class="card-body">List Banner</div>
+               <div class="card-body">Add Contact Address</div>
                <div class="card-header">
                 <div class="card pd-20 pd-sm-40">
                     <div class="table-wrapper">
                       <table id="datatable1" class="table display responsive nowrap">
                         <thead>
                           <tr>
-                            <th class="wd-25p">Banner Title</th>
-                            <th class="wd-25p">Banner Sub Title</th>
-                            <th class="wd-25p">Banner Btn</th>
-                            <th class="wd-25p">Banner Btn2</th>
-                            <th class="wd-25p">Banner Image</th>
+                            <th class="wd-25p">Icon</th>
+                            <th class="wd-25p">Title</th>
+                            <th class="wd-25p">Sub Title</th>
                             <th class="wd-25p">status</th>
                             <th class="wd-25p">Action</th>
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach ($banners as $item)
+                          @foreach ($singlecontacts as $item)
                           <tr>
                             
-                            <td>{{ $item->banner_title }}</td>
-                            <td>{{ $item->banner_sub_title }}</td>
-                            <td>{{ $item->banner_btn }}</td>
-                            <td>{{ $item->banner_btn2 }}</td>
-                            <td>{{ $item->banner_image }}</td>
+                            <td>{{ $item->single_icon }}</td>
+                            <td>{{ $item->single_title }}</td>
+                            <td>{{ $item->single_sub_title }}</td>
                             <td>
                               @if ($item->status == 1)
                                <span class="badge badge-pill badge-success">Active</span>
@@ -58,10 +54,10 @@ active
                           </td>
                             <td>
                               <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="{{ route('banner.edit',$item->id) }}" class="btn btn-success btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
+                                <a href="{{ route('singlecontact.edit',$item->id) }}" class="btn btn-success btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
                               
                               
-                                  <form action="{{ route('banner.destroy',$item->id) }}" method="POST">
+                                  <form action="{{ route('singlecontact.destroy',$item->id) }}" method="POST">
                                     @csrf
                                     @method('delete')
                                   <button class="btn btn-sm btn-danger" style="cursor: pointer;"  title="delete data"><i class="fa fa-trash"></i></button>
@@ -86,48 +82,36 @@ active
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
-                    ADD Banner
+                    ADD Contact Address
                 </div> 
                 <div class="card-body">
-                    <form action="{{ route('banner.store') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('singlecontact.store') }}" method="POST">
                         @csrf
-                         <div class="form-group">
-                            <label>Banner Image</label>
-                            <input type="file" name="banner_image"  class="form-control dropify">
-                            @error('banner_image')
-                                <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                          </div>
                         <div class="form-group">
-                          <label>Banner Title</label>
-                          <input type="text" name="banner_title" class="form-control" placeholder="Banner Title">
-                          @error('banner_title')
+                          <label>Single Icon</label>
+                          <input type="text" name="single_icon" class="form-control" placeholder="Single Icon">
+                          @error('single_icon')
                               <small class="text-danger">{{ $message }}</small>
                           @enderror
                         </div>
                         <div class="form-group">
-                            <label>Banner Sub Title</label>
-                            <input type="text" name="banner_sub_title" class="form-control" placeholder="Banner Sub Title">
-                            @error('banner_sub_title')
+                            <label>Single Title</label>
+                              <input type="text" name="single_title" class="form-control" placeholder="Single Title">
+                         
+                            @error('single_title')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror
                           </div>
                           <div class="form-group">
-                            <label>Banner Btn</label>
-                            <input type="text" name="banner_btn" class="form-control" placeholder="Banner Btn">
-                            @error('banner_btn')
+                            <label>Single Sub Title</label>
+                            <input type="text" name="single_sub_title" class="form-control" placeholder="Single Sub Title">
+                            @error('single_sub_title')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror
                           </div>
-                          <div class="form-group">
-                            <label>Banner Btn2</label>
-                            <input type="text" name="banner_btn2" class="form-control" class="form-control" placeholder="Banner Btn2">
-                            @error('banner_btn2')
-                                <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                          </div> 
                           
-                        <button type="submit" class="btn btn-success" style="cursor: pointer">Add Banner</button>
+                        
+                        <button type="submit" class="btn btn-success" style="cursor: pointer">Add Contact Address</button>
                       </form>
                 </div>
             </div>

@@ -47,6 +47,43 @@
             <span class="menu-item-label">Add Client</span>
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
+         <a href="{{ route('priceing.index') }}" class="sl-menu-link @yield('Priceing')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Add Priceing</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+          <a href="{{ route('team.index') }}" class="sl-menu-link @yield('Team')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Add Team</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+          <a href="{{ route('blog.index') }}" class="sl-menu-link @yield('Blog')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Add Blog</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->  
+        <a href="{{ route('cti.index') }}" class="sl-menu-link @yield('Cti')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Add Cti</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+          <a href="{{ route('contactform.index') }}" class="sl-menu-link @yield('Contactform')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Show All Contact Message</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+         <a href="{{ route('singlecontact.index') }}" class="sl-menu-link @yield('Add Contact Address')">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
+            <span class="menu-item-label">Add Contact Address</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+
         <a href="#" class="sl-menu-link">
           <div class="sl-menu-item">
             <i class="menu-item-icon ion-ios-pie-outline tx-20"></i>

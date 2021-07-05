@@ -10,6 +10,12 @@ Use App\Http\Controllers\Admin\ServicesController;
 Use App\Http\Controllers\Admin\ProjectController;
 Use App\Http\Controllers\Admin\TimelineController;
 Use App\Http\Controllers\Admin\ClientController;
+Use App\Http\Controllers\Admin\PriceingController;
+Use App\Http\Controllers\Admin\TeamController;
+Use App\Http\Controllers\Admin\BlogController;
+Use App\Http\Controllers\Admin\CtiController;
+Use App\Http\Controllers\Admin\ContactformController;
+Use App\Http\Controllers\Admin\SinglecontactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,7 +65,37 @@ Route::group(['prefix'=>'admin','middleware' =>['admin','auth']], function(){
     Route::resource('client', ClientController::class);
     Route::get('inactive/{id}',[ClientController::class, 'inactive']);
     Route::get('active/{id}',[ClientController::class, 'active']);
-});
+
+    // Clinet
+    Route::resource('priceing', PriceingController::class);
+    Route::get('inactive/{id}',[PriceingController::class, 'inactive']);
+    Route::get('active/{id}',[PriceingController::class, 'active']);
+
+      // Team
+    Route::resource('team', TeamController::class);
+    Route::get('inactive/{id}',[TeamController::class, 'inactive']);
+    Route::get('active/{id}',[TeamController::class, 'active']);
+
+     // blog
+    Route::resource('blog', BlogController::class);
+    Route::get('inactive/{id}',[BlogController::class, 'inactive']);
+    Route::get('active/{id}',[BlogController::class, 'active']); 
+
+     // cti
+    Route::resource('cti', CtiController::class);
+    Route::get('inactive/{id}',[CtiController::class, 'inactive']);
+    Route::get('active/{id}',[CtiController::class, 'active']);
+
+     // contactform
+    Route::resource('contactform', ContactformController::class);
+
+    // Singlecontact
+    Route::resource('singlecontact', SinglecontactController::class);
+    Route::get('inactive/{id}',[SinglecontactController::class, 'inactive']);
+    Route::get('active/{id}',[SinglecontactController::class, 'active']);
+
+
+    });
 
 Route::group(['prefix'=>'user','middleware' =>['user','auth']], function(){
     Route::get('dashboard',[UserController::class, 'index'])->name('user.dashboard');

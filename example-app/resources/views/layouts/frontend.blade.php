@@ -52,12 +52,15 @@
             <div class="row">
                 <div class="col-xxl-7">
                     <div class="contact-form">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Subject">
-                        <input type="text" placeholder="Email">
-                        <textarea name="" placeholder="Message" id="" cols="30" rows="5"></textarea>
-                        <input type="submit" value="Send">
 
+                        <form action="{{ route('contactform.store') }}" method="POST">
+                            @csrf
+                        <input name="name" type="text" placeholder="Name">
+                        <input name="subject" type="text" placeholder="Subject">
+                        <input name="email" type="text" placeholder="Email">
+                        <textarea name="message" placeholder="Message" id="" cols="30" rows="5"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
                     </div>
                 </div>
                 <div class="col-xxl-5">

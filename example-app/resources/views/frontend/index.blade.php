@@ -405,7 +405,7 @@
             <div class="row">
                 <div class="col-xxl-4">
                     <div class="single-team">
-                        <img src="assets/image/team/team1.jpg" alt="team1">
+                        <img src="{{ asset('frontend_assets/assets/image/team/team1.jpg') }}" alt="team1">
                         <div class="team-overlay">
                             <h4>john doe <span>web developer</span></h4>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -417,7 +417,7 @@
                 </div>
                 <div class="col-xxl-4">
                     <div class="single-team">
-                        <img src="assets/image/team/team2.jpg" alt="team2">
+                        <img src="{{ asset('frontend_assets/assets/image/team/team2.jpg') }}" alt="team2">
                         <div class="team-overlay">
                             <h4>john doe <span>web developer</span></h4>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -429,7 +429,7 @@
                 </div>
                 <div class="col-xxl-4">
                     <div class="single-team">
-                        <img src="assets/image/team/team3.jpg" alt="team3">
+                        <img src="{{ asset('frontend_assets/assets/image/team/team3.jpg') }}" alt="team3">
                         <div class="team-overlay">
                             <h4>john doe <span>web developer</span></h4>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -448,7 +448,7 @@
             <div class="row">
                 <div class="col-xxl-12">
                     <div class="section-title text-center mb-60">
-                        <h2>My Team</h2>
+                        <h2>Latest Blog</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                     </div>
                 </div>
@@ -457,7 +457,7 @@
                 <div class="col-xxl-4">
                     <div class="single-blog">
                         <div class="blog-img">
-                            <img src="assets/image/blog/blog1.jpg" alt="">
+                            <img src="{{ asset('frontend_assets/assets/image/blog/blog3.jpg') }}" alt="">
                         </div>
                         <div class="blog-meta">
                             <a href=""> <i class="fas fa-user"></i> admin</a>
@@ -474,7 +474,7 @@
                 <div class="col-xxl-4">
                     <div class="single-blog">
                         <div class="blog-img">
-                            <img src="assets/image/blog/blog2.jpg" alt="">
+                            <img src="{{ asset('frontend_assets/assets/image/blog/blog1.jpg') }}" alt="">
                         </div>
                         <div class="blog-meta">
                             <a href=""> <i class="fas fa-user"></i> admin</a>
@@ -491,7 +491,7 @@
                 <div class="col-xxl-4">
                     <div class="single-blog">
                         <div class="blog-img">
-                            <img src="assets/image/blog/blog3.jpg" alt="">
+                            <img src="{{ asset('frontend_assets/assets/image/blog/blog2.jpg') }}" alt="">
                         </div>
                         <div class="blog-meta">
                             <a href=""> <i class="fas fa-user"></i> admin</a>

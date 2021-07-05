@@ -95,7 +95,7 @@ active
                             @enderror
                           </div>
                           <div class="form-group">
-                            <label>About Btn</label>
+                            <label>About Image</label>
                             <input type="file" name="about_image" class="form-control dropify" placeholder="About Image">
                             @error('about_image')
                                 <small class="text-danger">{{ $message }}</small>
